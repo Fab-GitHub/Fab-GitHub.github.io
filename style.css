@@ -1,80 +1,137 @@
-
-
-h1{
-    /*margin: 0% 5%;*/
-    padding: 10px;
-}
-
 body {
-    background-color: rgb(178, 178, 178);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5vw;
-    margin-top: 0;
-    margin-bottom: 0%;
+    margin: 0px;
 }
 
-#logo{
-    font-stretch: expanded;
-    font-family: "Fredoka One";
-    width: 14vw;
-}
-
-body > header {
-    background-color: antiquewhite;
-    margin: auto;
-    display: flex;
-    height: 8vh;
-    align-items: center;
-    justify-content: space-around;
-}
-
-#nav_ul {
-    text-decoration: none;
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-#nav_ul > li {
-    padding: 1.5vw;
-    margin: 1vw;
-}
-
-.navbutton {
-    list-style: none;
-    text-decoration: none;
-    color: black;
-    padding: 8px;
+header {
+    padding: 16px;
+    background-color: rgb(68, 181, 199);
+    color: rgb(201, 231, 194);
+    text-align: center;
+    font-size: large;
+    grid-area: header;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border: 1px solid black;
-    border-radius: 10%;
 }
 
-body > main > article {
-    width: 80%;
-    margin: auto;
+#menu {
+    padding: 20px;
+    background-color: rgb(68, 181, 199);
+    border: 1px solid black;
+    grid-area: menu;
 }
 
-body > footer {
-    background-color: beige;
+nav>a{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+    color: rgb(201, 231, 194);
+}
+
+nav{
+    margin-top: 20px;
     display: flex;
+    align-items: center;
+    flex-flow: column;
 }
 
-ul{
-    margin: 0%;
+
+
+#main-content1-title {
+    padding: 5px;
+    grid-area: maintitle1;
+    justify-content: center;
+}
+#main-content1 {
+    padding: 15px;
+    grid-area: main1;
+}
+#main-content2 {
+    padding: 15px;
+    grid-area: main2;
+}
+#main-content3 {
+    padding: 15px;
+    grid-area: main3;
+}
+#main-content4 {
+    padding: 15px;
+    grid-area: main4;
+}
+#main-content2-title {
+    padding: 5px;
+    grid-area: maintitle2;
+}
+#main-content5 {
+    padding: 15px;
+    grid-area: main5;
+}
+#main-content6 {
+    padding: 15px;
+    grid-area: main6;
+}
+#main-content7 {
+    padding: 15px;
+    grid-area: main7;
+}
+#main-content8 {
+    padding: 15px;
+    grid-area: main8;
+}
+#main-content3-title {
+    padding: 5px;
+    grid-area: maintitle3;
+}
+#main-content9 {
+    padding: 15px;
+    grid-area: main9;
+}
+#main-content10 {
+    padding: 15px;
+    grid-area: main10;
+}
+#main-content11 {
+    padding: 15px;
+    grid-area: main11;
+}
+#main-content12 {
+    padding: 15px;
+    grid-area: main12;
 }
 
-form {
+.painting {
+    padding: 15px;
+    grid-area: main1;
+}
+
+.painting>p {
     text-align: center;
 }
 
-h2 {
+footer {
+    padding: 16px;
+    background-color: rgb(68, 181, 199);
+    color: rgb(201, 231, 194);
+    border: 1px solid black;
     text-align: center;
+    grid-area: footer;
 }
 
-img {
-    border-radius: 50%;
+#grid-container {
+    display: grid;
+    grid-template-areas:
+    "header header header header header"
+    "menu maintitle1 maintitle1 maintitle1 maintitle1"
+    "menu main1 main2 main3 main4"
+    "menu maintitle2 maintitle2 maintitle2 maintitle2"
+    "menu main5 main6 main7 main8"
+    "menu maintitle3 maintitle3 maintitle3 maintitle3"
+    "menu main9 main10 main11 main12"
+    "footer footer footer footer footer"
+    ;
+    grid-template-columns: 3fr 5fr 5fr 5fr 5fr;
+    justify-content: center;
+    margin-right: 10px;
 }
 
-#footer_ul {
-    list-style: none;
+#grid-container > section {
+    text-align: center;
 }
